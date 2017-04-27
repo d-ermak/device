@@ -4,104 +4,110 @@
     display: block;
 }
 
-.sprite-ico-cart-footer {
+.sprite-ico-cart {
     width: 12px;
     height: 12px;
     background-position: -10px -10px;
 }
 
-.sprite-ico-cart-footer-hover {
+.sprite-ico-cart-footer {
     width: 12px;
     height: 12px;
     background-position: -10px -42px;
 }
 
+.sprite-ico-cart-footer-hover {
+    width: 12px;
+    height: 12px;
+    background-position: -10px -74px;
+}
+
 .sprite-ico-checkbox {
     width: 12px;
     height: 7px;
-    background-position: -10px -74px;
+    background-position: -10px -106px;
 }
 
 .sprite-ico-compare {
     width: 10px;
     height: 10px;
-    background-position: -10px -101px;
+    background-position: -10px -133px;
 }
 
 .sprite-ico-compare-footer {
     width: 10px;
     height: 10px;
-    background-position: -10px -131px;
+    background-position: -10px -163px;
 }
 
 .sprite-ico-compare-footer-hover {
     width: 10px;
     height: 10px;
-    background-position: -10px -161px;
+    background-position: -10px -193px;
 }
 
 .sprite-ico-facebook {
     width: 39px;
     height: 38px;
-    background-position: -10px -191px;
+    background-position: -10px -223px;
 }
 
 .sprite-ico-htmlacademy {
     width: 27px;
     height: 34px;
-    background-position: -10px -249px;
+    background-position: -10px -281px;
 }
 
 .sprite-ico-htmlacademy-hover {
     width: 27px;
     height: 34px;
-    background-position: -10px -303px;
+    background-position: -10px -335px;
 }
 
 .sprite-ico-instagram {
     width: 39px;
     height: 38px;
-    background-position: -10px -357px;
+    background-position: -10px -389px;
 }
 
 .sprite-ico-nav-arrow {
     width: 4px;
     height: 7px;
-    background-position: -10px -415px;
+    background-position: -10px -447px;
 }
 
 .sprite-ico-new-flag {
     width: 60px;
     height: 61px;
-    background-position: -10px -442px;
+    background-position: -10px -474px;
 }
 
 .sprite-ico-search {
     width: 16px;
     height: 16px;
-    background-position: -10px -523px;
+    background-position: -10px -555px;
 }
 
 .sprite-ico-twitter {
     width: 38px;
     height: 38px;
-    background-position: -10px -559px;
+    background-position: -10px -591px;
 }
 
 .sprite-ico-user {
     width: 13px;
     height: 12px;
-    background-position: -10px -617px;
+    background-position: -10px -649px;
 }
 
 .sprite-ico-user-footer {
     width: 13px;
     height: 12px;
-    background-position: -10px -649px;
+    background-position: -10px -681px;
 }
 
 .sprite-ico-user-footer-hover {
     width: 13px;
     height: 12px;
-    background-position: -10px -681px;
+    background-position: -10px -713px;
 }
