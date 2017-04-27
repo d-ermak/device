@@ -698,6 +698,7 @@ a:active{
 /*================================================== Блок сервисов ==================================================*/
 .services{
 	position: relative;
+	margin-bottom: 95px;
 }
 
 .services::before{
@@ -847,4 +848,59 @@ a:active{
 	width: 440px;
 	margin: 0;
 	padding: 0;
+}
+
+/*================================================== Блок партнеров ==================================================*/
+.partners{
+	margin-top: 235px;
+}
+
+.partners-list{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.partner-item a{
+	position: relative;
+	display: block;
+	opacity: 1;
+}
+
+.partners .partner-item{
+	width: 260px;
+	margin-bottom: 40px;
+	opacity: .2;
+	transition: all .3s ease;
+}
+
+.partners .partner-item:hover{
+	opacity: 1;
+}
+
+.partners .partner-item-hover{
+	position: absolute;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	width: 260px;
+	height: 100px;
+	opacity: 0;
+	transition: all .25s ease;
+}
+
+.partners .partner-item:hover .partner-item-hover{
+	visibility: visible;
+	opacity: 1;
 }
