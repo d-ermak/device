@@ -633,13 +633,14 @@ a:active{
 	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin: 0;
-	margin-bottom: 85px;
+	margin-bottom: 125px;
 	padding: 0;
 	list-style: none;
 }
 
 .categories .category-item{
 	width: 160px;
+	margin-bottom: 40px;
 }
 
 .category-item .category-image{
@@ -656,14 +657,26 @@ a:active{
 	background-color: #ffc600;
 }
 
+.category-item:active .category-image{
+	background-color: #ffc600;
+}
+
 .category-image img{
 	position: absolute;
+	max-width: 160px;
+	max-height: 160px;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+	transition: all .3s ease;
+}
+
+.category-item:active img,
+.category-item:active .category-description{
+	opacity: .3;
 }
 
 .category-item:nth-child(2) .category-image img{
@@ -679,4 +692,159 @@ a:active{
 	line-height: 22px;
 	color: #000;
 	text-align: center;
+	transition: all .3s ease;
+}
+
+/*================================================== Блок сервисов ==================================================*/
+.services{
+	position: relative;
+}
+
+.services::before{
+	content: "";
+	position: absolute;
+	z-index: -2;
+	left: 0;
+	top: 20px;
+	width: 100%;
+	height: 288px;
+	background-color: #e6e6e6;
+}
+
+.services input{
+	display: none;
+}
+
+.services .services-tabs{
+	position: relative;
+	width: 280px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.services-tabs::after{
+	content: "";
+	position: absolute;
+	right: -4px;
+	top: -80px;
+	height: 319px;
+	width: 7px;
+	background-color: #000;
+}
+
+.services-tabs li{
+	margin-bottom: 24px;
+}
+
+.service-tab label{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 160px;
+	padding: 11px 6px;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	color: #000;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 3.5px;
+	transition: all .25s ease;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;   
+}
+
+.service-tab label::before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 0;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 100%;
+	height: 8px;
+	background-color: #ffc600;
+	transition: all .25s ease;
+}
+
+.service-tab label:hover::before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 0;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 100%;
+	height: 40px;
+}
+
+#delivery:checked ~ label[for=delivery],
+#guarantee:checked ~ label[for=guarantee],
+#credit:checked ~ label[for=credit]{
+	color: #ffc600;
+}
+
+#delivery:checked ~ label[for=delivery]::before,
+#guarantee:checked ~ label[for=guarantee]::before,
+#credit:checked ~ label[for=credit]::before{
+	height: 40px;
+	width: 280px;
+	background-color: #000;
+}
+
+.service-tab .tab-content-delivery,
+.service-tab .tab-content-guarantee,
+.service-tab .tab-content-credit{
+	position: absolute;
+	top: -40px;
+	left: 401px;
+	visibility: hidden;
+	opacity: 0;
+	width: 760px;
+	padding: 30px 0;	
+	background-position: 60% 65%;
+	transition: all .25s ease;
+}
+
+#delivery:checked ~ .tab-content-delivery{
+	visibility: visible;
+	opacity: 1;
+	background: url("../img/delivery.png") 89% 65% no-repeat;
+}
+
+#guarantee:checked ~ .tab-content-guarantee{
+	visibility: visible;
+	opacity: 1;
+	background: url("../img/warranty.png") 89% 65% no-repeat;
+}
+
+#credit:checked ~ .tab-content-credit{
+	visibility: visible;
+	opacity: 1;
+	background: url("../img/credit.png") 89% 65% no-repeat;
+}
+
+.service-tab .tab-content-title{
+	margin: 0;
+	margin-bottom: 28px;
+	padding: 0;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+	font-size: 47px;
+	line-height: 55px;
+	color: #000;
+}
+
+.service-tab .tab-content-description{
+	width: 440px;
+	margin: 0;
+	padding: 0;
 }
