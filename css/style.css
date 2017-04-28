@@ -698,7 +698,6 @@ a:active{
 /*================================================== Блок сервисов ==================================================*/
 .services{
 	position: relative;
-	margin-bottom: 95px;
 }
 
 .services::before{
@@ -853,6 +852,7 @@ a:active{
 /*================================================== Блок партнеров ==================================================*/
 .partners{
 	margin-top: 235px;
+	margin-bottom: 51px;
 }
 
 .partners-list{
@@ -903,4 +903,97 @@ a:active{
 .partners .partner-item:hover .partner-item-hover{
 	visibility: visible;
 	opacity: 1;
+}
+
+/*================================================== Блок о компании ==================================================*/
+.company{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 90px;
+}
+
+.company .company-contacts,
+.company .company-about{
+	position: relative;
+	width: 560px;
+}
+
+.company .company-contacts::before,
+.company .company-about::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80px;
+	height: 7px;
+	background-color: #000;
+}
+
+
+.company-contacts h2,
+.company-about h2{
+	margin: 0;
+	margin-bottom: 39px;
+	margin-top: 49px;
+	padding: 0;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+	font-size: 47px;
+	line-height: 55px;
+	color: #000;
+}
+
+.company-contacts p,
+.company-about p{
+	width: 472px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 29px;
+}
+
+.company-contacts p{
+	width: 504px;
+	margin-bottom: 39px;
+}
+
+.company-about .trade-companies{
+	margin: 0;
+	margin-top: 67px;
+	margin-bottom: 55px;
+	padding: 0;
+	list-style: none;
+}
+
+.trade-companies li{
+	position: relative;
+	padding-left: 35px;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 40px;
+	color: #000;
+}
+
+.trade-companies li::before{
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: 0px;
+	width: 4px;
+	height: 4px;
+	background-color: #fff;
+	opacity: .3;
+	border: 3px solid #000;
+	border-radius: 50%;
+	cursor: default;
+}
+
+.company-about .btn{
+	padding: 10px 23px;
+}
+
+.company .company-contacts-map{
+	margin-bottom: 61px;
 }
