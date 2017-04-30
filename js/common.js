@@ -9,7 +9,6 @@ var closeMap = mapPopup.querySelector(".modal-map .close-btn");
 var login = formPopup.querySelector("[name=name]");
 var email = formPopup.querySelector("[name=email]");
 var textarea = formPopup.querySelector("textarea");
-var storage = localStorage.getItem("login");
 
 //Интерактивная карта
 
@@ -47,12 +46,7 @@ openForm.addEventListener("click", function(event) {
   event.preventDefault();
   formPopup.classList.add("modal-open");
   overlay.classList.add("overlay-open");
-  if (storage) {
-    login.value = storage;
-    email.focus();
-  } else {
-    login.focus();
-  }
+  login.focus();
 });
 
 closeForm.addEventListener("click", function(event) {
